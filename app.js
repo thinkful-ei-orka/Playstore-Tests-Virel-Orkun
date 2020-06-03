@@ -33,7 +33,7 @@ app.get('/apps', (req, res) => {
         }
 
         responseData.sort((a, b) => {
-            return a[sort] < b[sort] ? 1 : -1;
+            return a[sort] - b[sort] 
         })
     }
 
